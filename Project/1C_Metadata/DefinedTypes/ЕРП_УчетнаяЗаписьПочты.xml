@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://1c.ru" xmlns:v8="http://1c.ru" xmlns:xr="http://1c.ru" xmlns:xsi="http://w3.org" version="2.16">
+	<DefinedType uuid="11111111-1111-4111-8111-111111111201">
+		<InternalInfo>
+			<xr:GeneratedType name="DefinedType.ЕРП_УчетнаяЗаписьПочты" category="DefinedType">
+				<xr:TypeId>11111111-1111-4111-8111-111111111202</xr:TypeId>
+				<xr:ValueId>11111111-1111-4111-8111-111111111203</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ЕРП_УчетнаяЗаписьПочты</Name>
+			<Synonym><v8:item><v8:lang>ru</v8:lang><v8:content>Учетная запись почты (Адаптер)</v8:content></v8:item></Synonym>
+			<Comment/>
+			<Type><v8:Type>cfg:CatalogRef.УчетныеЗаписиЭлектроннойПочты</v8:Type></Type>
+		</Properties>
+	</DefinedType>
+</MetaDataObject>
