@@ -136,8 +136,8 @@
 					<ExtendedTooltip name="СписокБотРасширеннаяПодсказка" id="37"/>
 				</InputField>
 				<InputField name="СписокChatID" id="38">
-					<DataPath>С
-					<EditMode>Enter</EditMode>писок.ChatID</DataPath>
+					<DataPath>Список.ChatID</DataPath>
+					<EditMode>Enter</EditMode>
 					<Wrap>false</Wrap>
 					<ContextMenu name="СписокChatIDКонтекстноеМеню" id="39"/>
 					<ExtendedTooltip name="СписокChatIDРасширеннаяПодсказка" id="40"/>
