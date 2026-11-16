@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<MetaDataObject xmlns="http://1c.ru" xmlns:v8="http://1c.ru" xmlns:xr="http://1c.ru" xmlns:xsi="http://w3.org" version="2.16"><InformationRegister uuid="44444444-4444-4444-8444-444444444301"><InternalInfo>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:cfg="http://v8.1c.ru/8.3/MDClasses" xmlns:v8="http://v8.1c.ru/8.3/MDClasses" xmlns:xr="http://v8.1c.ru/8.3/MDClasses" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16"><InformationRegister uuid="44444444-4444-4444-8444-444444444301"><InternalInfo>
 <xr:GeneratedType name="InformationRegisterRecord.ЕРП_ОчередьУведомлений" category="Record"><xr:TypeId>44444444-4444-4444-8444-444444444302</xr:TypeId><xr:ValueId>44444444-4444-4444-8444-444444444303</xr:ValueId></xr:GeneratedType>
 <xr:GeneratedType name="InformationRegisterManager.ЕРП_ОчередьУведомлений" category="Manager"><xr:TypeId>44444444-4444-4444-8444-444444444304</xr:TypeId><xr:ValueId>44444444-4444-4444-8444-444444444305</xr:ValueId></xr:GeneratedType>
 <xr:GeneratedType name="InformationRegisterSelection.ЕРП_ОчередьУведомлений" category="Selection"><xr:TypeId>44444444-4444-4444-8444-444444444306</xr:TypeId><xr:ValueId>44444444-4444-4444-8444-444444444307</xr:ValueId></xr:GeneratedType>
