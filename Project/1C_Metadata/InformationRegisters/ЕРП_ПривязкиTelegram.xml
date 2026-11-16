@@ -42,8 +42,10 @@
 			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
 			<WriteMode>Independent</WriteMode>
 			<UseStandardCommands>true</UseStandardCommands>
+			<DefaultListForm>InformationRegister.ЕРП_ПривязкиTelegram.Form.ФормаСписка</DefaultListForm>
 		</Properties>
 		<ChildObjects>
+			<Form>ФормаСписка</Form>
 			<Resource uuid="44444444-4444-4444-8444-444444444221">
 				<Properties>
 					<Name>ChatID</Name>
