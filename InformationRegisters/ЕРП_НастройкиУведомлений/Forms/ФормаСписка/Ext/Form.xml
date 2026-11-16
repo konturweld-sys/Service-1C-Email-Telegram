@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://1c.ru" xmlns:cfg="http://1c.ru" xmlns:dcsset="http://1c.ru" xmlns:v8="http://1c.ru" xmlns:v8ui="http://1c.ru" xmlns:xr="http://1c.ru" xmlns:xs="http://w3.org" xmlns:xsi="http://w3.org-instance" version="2.16">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаОбновить" id="101">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Item.Список.StandardCommand.Refresh</CommandName>
+				<ExtendedTooltip name="ФормаОбновитьРасширеннаяПодсказка" id="102"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Table name="Список" id="10">
+			<Representation>List</Representation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<DefaultItem>true</DefaultItem>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<InitialTreeView>ExpandTopLevel</InitialTreeView>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<ContextMenu name="СписокКонтекстноеМеню" id="11">
+				<Autofill>false</Autofill>
+			</ContextMenu>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="12">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="13"/>
+			<Events>
+				<Event name="BeforeAddRow">СписокПередНачаломДобавления</Event>
+				<Event name="BeforeDeleteRow">СписокПередУдалением</Event>
+			</Events>
+			<ChildItems>
+				<InputField name="СписокПрофильНастроек" id="20">
+					<DataPath>Список.ПрофильНастроек</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Wrap>false</Wrap>
+					<ContextMenu name="СписокПрофильНастроекКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="СписокПрофильНастроекРасширеннаяПодсказка" id="22"/>
+				</InputField>
+				<CheckBoxField name="СписокОтправкаРазрешена" id="23">
+					<DataPath>Список.ОтправкаРазрешена</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="СписокОтправкаРазрешенаКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="СписокОтправкаРазрешенаРасширеннаяПодсказка" id="25"/>
+				</CheckBoxField>
+				<InputField name="СписокМаксимальноеКоличествоПопыток" id="26">
+					<DataPath>Список.МаксимальноеКоличествоПопыток</DataPath>
+					<Wrap>false</Wrap>
+					<ContextMenu name="СписокМаксимальноеКоличествоПопытокКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="СписокМаксимальноеКоличествоПопытокРасширеннаяПодсказка" id="28"/>
+				</InputField>
+				<InputField name="СписокСрокАрендыСекунд" id="29">
+					<DataPath>Список.СрокАрендыСекунд</DataPath>
+					<Wrap>false</Wrap>
+					<ContextMenu name="СписокСрокАрендыСекундКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="СписокСрокАрендыСекундРасширеннаяПодсказка" id="31"/>
+				</InputField>
+				<InputField name="СписокБазоваяЗадержкаПовтораСекунд" id="32">
+					<DataPath>Список.БазоваяЗадержкаПовтораСекунд</DataPath>
+					<Wrap>false</Wrap>
+					<ContextMenu name="СписокБазоваяЗадержкаПовтораСекундКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="СписокБазоваяЗадержкаПовтораСекундРасширеннаяПодсказка" id="34"/>
+				</InputField>
+				<InputField name="СписокСрокХраненияОчередиДней" id="35">
+					<DataPath>Список.СрокХраненияОчередиДней</DataPath>
+					<Wrap>false</Wrap>
+					<ContextMenu name="СписокСрокХраненияОчередиДнейКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="СписокСрокХраненияОчередиДнейРасширеннаяПодсказка" id="37"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Settings xsi:type="cfg:DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>InformationRegister.ЕРП_НастройкиУведомлений</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:item><dcsset:field>ПрофильНастроек</dcsset:field></dcsset:item>
+					<dcsset:item><dcsset:field>ОтправкаРазрешена</dcsset:field></dcsset:item>
+					<dcsset:item><dcsset:field>МаксимальноеКоличествоПопыток</dcsset:field></dcsset:item>
+					<dcsset:item><dcsset:field>СрокАрендыСекунд</dcsset:field></dcsset:item>
+					<dcsset:item><dcsset:field>БазоваяЗадержкаПовтораСекунд</dcsset:field></dcsset:item>
+					<dcsset:item><dcsset:field>СрокХраненияОчередиДней</dcsset:field></dcsset:item>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+</Form>
