@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:cfg="http://v8.1c.ru/8.3/MDClasses" xmlns:v8="http://v8.1c.ru/8.3/MDClasses" xmlns:xr="http://v8.1c.ru/8.3/MDClasses" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+<CommonModule uuid="44444444-4444-4444-8444-444444445104">
+<Properties>
+<Name>ЕРП_ОпределениеПолучателейУведомлений</Name>
+<Global>false</Global>
+<Server>true</Server>
+<ExternalConnection>false</ExternalConnection>
+<ClientManagedApplication>false</ClientManagedApplication>
+<ClientOrdinaryApplication>false</ClientOrdinaryApplication>
+<ServerCall>false</ServerCall>
+<Privileged>false</Privileged>
+<ReturnValuesReuse>DontUse</ReturnValuesReuse>
+</Properties>
+</CommonModule>
+</MetaDataObject>
