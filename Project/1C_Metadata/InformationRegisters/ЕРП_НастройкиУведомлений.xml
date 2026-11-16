@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://1c.ru" xmlns:v8="http://1c.ru" xmlns:xr="http://1c.ru" xmlns:xsi="http://w3.org" version="2.16">
+	<InformationRegister uuid="44444444-4444-4444-8444-444444444401">
+		<InternalInfo>
+			<xr:GeneratedType name="InformationRegisterRecord.ЕРП_НастройкиУведомлений" category="Record">
+				<xr:TypeId>44444444-4444-4444-8444-444444444402</xr:TypeId>
+				<xr:ValueId>44444444-4444-4444-8444-444444444403</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterManager.ЕРП_НастройкиУведомлений" category="Manager">
+				<xr:TypeId>44444444-4444-4444-8444-444444444404</xr:TypeId>
+				<xr:ValueId>44444444-4444-4444-8444-444444444405</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterSelection.ЕРП_НастройкиУведомлений" category="Selection">
+				<xr:TypeId>44444444-4444-4444-8444-444444444406</xr:TypeId>
+				<xr:ValueId>44444444-4444-4444-8444-444444444407</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterList.ЕРП_НастройкиУведомлений" category="List">
+				<xr:TypeId>44444444-4444-4444-8444-444444444408</xr:TypeId>
+				<xr:ValueId>44444444-4444-4444-8444-444444444409</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordSet.ЕРП_НастройкиУведомлений" category="RecordSet">
+				<xr:TypeId>44444444-4444-4444-8444-444444444410</xr:TypeId>
+				<xr:ValueId>44444444-4444-4444-8444-444444444411</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordKey.ЕРП_НастройкиУведомлений" category="RecordKey">
+				<xr:TypeId>44444444-4444-4444-8444-444444444412</xr:TypeId>
+				<xr:ValueId>44444444-4444-4444-8444-444444444413</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordManager.ЕРП_НастройкиУведомлений" category="RecordManager">
+				<xr:TypeId>44444444-4444-4444-8444-444444444414</xr:TypeId>
+				<xr:ValueId>44444444-4444-4444-8444-444444444415</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ЕРП_НастройкиУведомлений</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки уведомлений</v8:content>
+				</v8:item>
+			</Synonym>
+			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
+			<WriteMode>Independent</WriteMode>
+			<UseStandardCommands>true</UseStandardCommands>
+		</Properties>
+		<ChildObjects>
+			<Resource uuid="44444444-4444-4444-8444-444444444421">
+				<Properties>
+					<Name>ОтправкаРазрешена</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отправка разрешена</v8:content>
+						</v8:item>
+					</Synonym>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Properties>
+			</Resource>
+			<Resource uuid="44444444-4444-4444-8444-444444444422">
+				<Properties>
+					<Name>МаксимальноеКоличествоПопыток</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Максимальное количество попыток</v8:content>
+						</v8:item>
+					</Synonym>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>2</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Properties>
+			</Resource>
+			<Resource uuid="44444444-4444-4444-8444-444444444423">
+				<Properties>
+					<Name>СрокАрендыСекунд</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Срок аренды (сек)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>4</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Properties>
+			</Resource>
+			<Resource uuid="44444444-4444-4444-8444-444444444424">
+				<Properties>
+					<Name>БазоваяЗадержкаПовтораСекунд</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Базовая задержка повтора (сек)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>4</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Properties>
+			</Resource>
+			<Resource uuid="44444444-4444-4444-8444-444444444425">
+				<Properties>
+					<Name>СрокХраненияОчередиДней</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Срок хранения очереди (дней)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>3</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Properties>
+			</Resource>
+			<Dimension uuid="44444444-4444-4444-8444-444444444431">
+				<Properties>
+					<Name>ПрофильНастроек</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Профиль настроек</v8:content>
+						</v8:item>
+					</Synonym>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>20</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+					<MainFilter>true</MainFilter>
+				</Properties>
+			</Dimension>
+		</ChildObjects>
+	</InformationRegister>
+</MetaDataObject>
