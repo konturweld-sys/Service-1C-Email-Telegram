@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://1c.ru" xmlns:app="http://1c.ru" xmlns:cfg="http://1c.ru" xmlns:dcscor="http://1c.ru" xmlns:dcsset="http://1c.ru" xmlns:ent="http://1c.ru" xmlns:lf="http://1c.ru" xmlns:style="http://1c.ru" xmlns:sys="http://1c.ru" xmlns:v8="http://1c.ru" xmlns:v8ui="http://1c.ru" xmlns:web="http://1c.ru/colors/web" xmlns:win="http://1c.ru/colors/windows" xmlns:xr="http://1c.ru" xmlns:xs="http://w3.org" xmlns:xsi="http://w3.org-instance" version="2.16">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>true</Autofill>
+		<ChildItems>
+			<Button name="ФормаПроверитьСвязьTelegram" id="101">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПроверитьСвязьTelegram</CommandName>
+				<ExtendedTooltip name="ФормаПроверитьСвязьTelegramРасширеннаяПодсказка" id="102"/>
+			</Button>
+			<Button name="ФормаОтправитьКодПодтверждения" id="103">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ОтправитьКодПодтверждения</CommandName>
+				<ExtendedTooltip name="ФормаОтправитьКодПодтвержденияРасширеннаяПодсказка" id="104"/>
+			</Button>
+			<Button name="ФормаПодтвердитьПривязку" id="105">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПодтвердитьПривязку</CommandName>
+				<ExtendedTooltip name="ФормаПодтвердитьПривязкуРасширеннаяПодсказка" id="106"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаБыстрыхОтборов" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отборы</v8:content>
+				</v8:item>
+			</Title>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаБыстрыхОтборовРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<InputField name="ОтборПользователь" id="3">
+					<DataPath>ОтборПользователь</DataPath>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="ОтборПользовательКонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="ОтборПользовательРасширеннаяПодсказка" id="5"/>
+					<Events>
+						<Event name="OnChange">ОтборПользовательПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ОтборБот" id="6">
+					<DataPath>ОтборБот</DataPath>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="ОтборБотКонтекстноеМеню" id="7"/>
+					<ExtendedTooltip name="ОтборБотРасширеннаяПодсказка" id="8"/>
+					<Events>
+						<Event name="OnChange">ОтборБотПриИзменении</Event>
+					</Events>
+				</InputField>
+				<CheckBoxField name="ОтборТолькоАктивные" id="9">
+					<DataPath>ОтборТолькоАктивные</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ОтборТолькоАктивныеКонтекстноеМеню" id="10"/>
+					<ExtendedTooltip name="ОтборТолькоАктивныеРасширеннаяПодсказка" id="11"/>
+					<Events>
+						<Event name="OnChange">ОтборТолькоАктивныеПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="Список" id="20">
+			<Representation>List</Representation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<DefaultItem>true</DefaultItem>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<InitialTreeView>ExpandTopLevel</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+			<ContextMenu name="СписокКонтекстноеМеню" id="21"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="22">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="23"/>
+			<SearchStringAddition name="СписокСтрокаПоиска" id="24">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="25"/>
+				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="26"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокСостояниеПросмотра" id="27">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="28"/>
+				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="29"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокУправлениеПоиском" id="30">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="31"/>
+				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="32"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="OnStartEdit">СписокПриНачалеРедактирования</Event>
+			</Events>
+			<ChildItems>
+				<InputField name="СписокПользователь" id="40">
+					<DataPath>Список.Пользователь</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<Wrap>false</Wrap>
+					<ContextMenu name="СписокПользовательКонтекстноеМеню" id="41"/>
+					<ExtendedTooltip name="СписокПользовательРасширеннаяПодсказка" id="42"/>
+				</InputField>
+				<InputField name="СписокБот" id="43">
+					<DataPath>Список.Бот</DataPath>
+					<Wrap>false</Wrap>
+					<ContextMenu name="СписокБотКонтекстноеМеню" id="44"/>
+					<ExtendedTooltip name="СписокБотРасширеннаяПодсказка" id="45"/>
+				</InputField>
+				<InputField name="СписокChatID" id="46">
+					<DataPath>Список.ChatID</DataPath>
+					<Wrap>false</Wrap>
+					<ContextMenu name="СписокChatIDКонтекстноеМеню" id="47"/>
+					<ExtendedTooltip name="СписокChatIDРасширеннаяПодсказка" id="48"/>
+					<Events>
+						<Event name="OnChange">СписокChatIDПриИзменении</Event>
+					</Events>
+				</InputField>
+				<CheckBoxField name="СписокАктивна" id="49">
+					<DataPath>Список.Активна</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="СписокАктивнаКонтекстноеМеню" id="50"/>
+					<ExtendedTooltip name="СписокАктивнаРасширеннаяПодсказка" id="51"/>
+				</CheckBoxField>
+				<CheckBoxField name="СписокПодтверждена" id="52">
+					<DataPath>Список.Подтверждена</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="СписокПодтвержденаКонтекстноеМеню" id="53"/>
+					<ExtendedTooltip name="СписокПодтвержденаРасширеннаяПодсказка" id="54"/>
+				</CheckBoxField>
+				<InputField name="СписокДатаПодтверждения" id="55">
+					<DataPath>Список.ДатаПодтверждения</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Wrap>false</Wrap>
+					<ContextMenu name="СписокДатаПодтвержденияКонтекстноеМеню" id="56"/>
+					<ExtendedTooltip name="СписокДатаПодтвержденияРасширеннаяПодсказка" id="57"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Settings xsi:type="cfg:DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>InformationRegister.ЕРП_ПривязкиTelegram</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:item>
+						<dcsset:field>Пользователь</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>Бот</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ChatID</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>Активна</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>Подтверждена</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ДатаПодтверждения</dcsset:field>
+					</dcsset:item>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ОтборПользователь" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пользователь</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DefinedType.ЕРП_ПолучательУведомлений</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтборБот" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Бот</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DefinedType.ЕРП_БотTelegram</v8:Type>
+			</Type>
+		</Attribute>
+				<Attribute name="ОтборТолькоАктивные" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Только активные</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПроверитьСвязьTelegram" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить связь (Тест)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить тестовое сообщение в выбранный чат Telegram</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.SendMessage</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПроверитьСвязьTelegram</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ОтправитьКодПодтверждения" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить код подтверждения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать и отправить одноразовый код верификации в Telegram</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтправитьКодПодтверждения</Action>
+		</Command>
+		<Command name="ПодтвердитьПривязку" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подтвердить привязку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ввести код подтверждения, полученный пользователем в Telegram</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Check</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПодтвердитьПривязку</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+</Form>
