@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://1c.ru" xmlns:app="http://1c.ru" xmlns:cfg="http://1c.ru" xmlns:dcscor="http://1c.ru" xmlns:dcsset="http://1c.ru" xmlns:ent="http://1c.ru" xmlns:lf="http://1c.ru" xmlns:style="http://1c.ru" xmlns:sys="http://1c.ru" xmlns:v8="http://1c.ru" xmlns:v8ui="http://1c.ru" xmlns:web="http://1c.ru/colors/web" xmlns:win="http://1c.ru/colors/windows" xmlns:xr="http://1c.ru" xmlns:xs="http://w3.org" xmlns:xsi="http://w3.org-instance" version="2.16">
-	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="1">
 		<Autofill>true</Autofill>
 		<ChildItems>
-			<Button name="ФормаПроверитьСвязьTelegram" id="101">
+			<Button name="ФормаПроверитьСвязьTelegram" id="2">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.ПроверитьСвязьTelegram</CommandName>
-				<ExtendedTooltip name="ФормаПроверитьСвязьTelegramРасширеннаяПодсказка" id="102"/>
+				<ExtendedTooltip name="ФормаПроверитьСвязьTelegramРасширеннаяПодсказка" id="3"/>
 			</Button>
-			<Button name="ФормаОтправитьКодПодтверждения" id="103">
+			<Button name="ФормаОтправитьКодПодтверждения" id="4">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.ОтправитьКодПодтверждения</CommandName>
-				<ExtendedTooltip name="ФормаОтправитьКодПодтвержденияРасширеннаяПодсказка" id="104"/>
+				<ExtendedTooltip name="ФормаОтправитьКодПодтвержденияРасширеннаяПодсказка" id="5"/>
 			</Button>
-			<Button name="ФормаПодтвердитьПривязку" id="105">
+			<Button name="ФормаПодтвердитьПривязку" id="6">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.ПодтвердитьПривязку</CommandName>
-				<ExtendedTooltip name="ФормаПодтвердитьПривязкуРасширеннаяПодсказка" id="106"/>
+				<ExtendedTooltip name="ФормаПодтвердитьПривязкуРасширеннаяПодсказка" id="7"/>
 			</Button>
 		</ChildItems>
 	</AutoCommandBar>
@@ -24,7 +24,7 @@
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
-		<UsualGroup name="ГруппаБыстрыхОтборов" id="1">
+		<UsualGroup name="ГруппаБыстрыхОтборов" id="8">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -34,39 +34,39 @@
 			<Group>AlwaysHorizontal</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаБыстрыхОтборовРасширеннаяПодсказка" id="2"/>
+			<ExtendedTooltip name="ГруппаБыстрыхОтборовРасширеннаяПодсказка" id="9"/>
 			<ChildItems>
-				<InputField name="ОтборПользователь" id="3">
+				<InputField name="ОтборПользователь" id="10">
 					<DataPath>ОтборПользователь</DataPath>
 					<ClearButton>true</ClearButton>
-					<ContextMenu name="ОтборПользовательКонтекстноеМеню" id="4"/>
-					<ExtendedTooltip name="ОтборПользовательРасширеннаяПодсказка" id="5"/>
+					<ContextMenu name="ОтборПользовательКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="ОтборПользовательРасширеннаяПодсказка" id="12"/>
 					<Events>
 						<Event name="OnChange">ОтборПользовательПриИзменении</Event>
 					</Events>
 				</InputField>
-				<InputField name="ОтборБот" id="6">
+				<InputField name="ОтборБот" id="13">
 					<DataPath>ОтборБот</DataPath>
 					<ClearButton>true</ClearButton>
-					<ContextMenu name="ОтборБотКонтекстноеМеню" id="7"/>
-					<ExtendedTooltip name="ОтборБотРасширеннаяПодсказка" id="8"/>
+					<ContextMenu name="ОтборБотКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="ОтборБотРасширеннаяПодсказка" id="15"/>
 					<Events>
 						<Event name="OnChange">ОтборБотПриИзменении</Event>
 					</Events>
 				</InputField>
-				<CheckBoxField name="ОтборТолькоАктивные" id="9">
+				<CheckBoxField name="ОтборТолькоАктивные" id="16">
 					<DataPath>ОтборТолькоАктивные</DataPath>
 					<TitleLocation>Right</TitleLocation>
 					<CheckBoxType>Auto</CheckBoxType>
-					<ContextMenu name="ОтборТолькоАктивныеКонтекстноеМеню" id="10"/>
-					<ExtendedTooltip name="ОтборТолькоАктивныеРасширеннаяПодсказка" id="11"/>
+					<ContextMenu name="ОтборТолькоАктивныеКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="ОтборТолькоАктивныеРасширеннаяПодсказка" id="18"/>
 					<Events>
 						<Event name="OnChange">ОтборТолькоАктивныеПриИзменении</Event>
 					</Events>
 				</CheckBoxField>
 			</ChildItems>
 		</UsualGroup>
-		<Table name="Список" id="20">
+		<Table name="Список" id="19">
 			<Representation>List</Representation>
 			<CommandBarLocation>None</CommandBarLocation>
 			<DefaultItem>true</DefaultItem>
@@ -89,86 +89,87 @@
 			<AllowRootChoice>false</AllowRootChoice>
 			<UpdateOnDataChange>Auto</UpdateOnDataChange>
 			<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
-			<ContextMenu name="СписокКонтекстноеМеню" id="21"/>
-			<AutoCommandBar name="СписокКоманднаяПанель" id="22">
+			<ContextMenu name="СписокКонтекстноеМеню" id="20"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="21">
 				<Autofill>false</Autofill>
 			</AutoCommandBar>
-			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="23"/>
-			<SearchStringAddition name="СписокСтрокаПоиска" id="24">
+			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="22"/>
+			<SearchStringAddition name="СписокСтрокаПоиска" id="23">
 				<AdditionSource>
 					<Item>Список</Item>
 					<Type>SearchStringRepresentation</Type>
 				</AdditionSource>
-				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="25"/>
-				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="26"/>
+				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="24"/>
+				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="25"/>
 			</SearchStringAddition>
-			<ViewStatusAddition name="СписокСостояниеПросмотра" id="27">
+			<ViewStatusAddition name="СписокСостояниеПросмотра" id="26">
 				<AdditionSource>
 					<Item>Список</Item>
 					<Type>ViewStatusRepresentation</Type>
 				</AdditionSource>
-				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="28"/>
-				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="29"/>
+				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="27"/>
+				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="28"/>
 			</ViewStatusAddition>
-			<SearchControlAddition name="СписокУправлениеПоиском" id="30">
+			<SearchControlAddition name="СписокУправлениеПоиском" id="29">
 				<AdditionSource>
 					<Item>Список</Item>
 					<Type>SearchControl</Type>
 				</AdditionSource>
-				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="31"/>
-				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="32"/>
+				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="30"/>
+				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="31"/>
 			</SearchControlAddition>
 			<Events>
 				<Event name="OnStartEdit">СписокПриНачалеРедактирования</Event>
 			</Events>
 			<ChildItems>
-				<InputField name="СписокПользователь" id="40">
+				<InputField name="СписокПользователь" id="32">
 					<DataPath>Список.Пользователь</DataPath>
 					<DefaultItem>true</DefaultItem>
 					<Wrap>false</Wrap>
-					<ContextMenu name="СписокПользовательКонтекстноеМеню" id="41"/>
-					<ExtendedTooltip name="СписокПользовательРасширеннаяПодсказка" id="42"/>
+					<ContextMenu name="СписокПользовательКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="СписокПользовательРасширеннаяПодсказка" id="34"/>
 				</InputField>
-				<InputField name="СписокБот" id="43">
+				<InputField name="СписокБот" id="35">
 					<DataPath>Список.Бот</DataPath>
 					<Wrap>false</Wrap>
-					<ContextMenu name="СписокБотКонтекстноеМеню" id="44"/>
-					<ExtendedTooltip name="СписокБотРасширеннаяПодсказка" id="45"/>
+					<ContextMenu name="СписокБотКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="СписокБотРасширеннаяПодсказка" id="37"/>
 				</InputField>
-				<InputField name="СписокChatID" id="46">
-					<DataPath>Список.ChatID</DataPath>
+				<InputField name="СписокChatID" id="38">
+					<DataPath>С
+					<EditMode>Enter</EditMode>писок.ChatID</DataPath>
 					<Wrap>false</Wrap>
-					<ContextMenu name="СписокChatIDКонтекстноеМеню" id="47"/>
-					<ExtendedTooltip name="СписокChatIDРасширеннаяПодсказка" id="48"/>
+					<ContextMenu name="СписокChatIDКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="СписокChatIDРасширеннаяПодсказка" id="40"/>
 					<Events>
 						<Event name="OnChange">СписокChatIDПриИзменении</Event>
 					</Events>
 				</InputField>
-				<CheckBoxField name="СписокАктивна" id="49">
+				<CheckBoxField name="СписокАктивна" id="41">
 					<DataPath>Список.Активна</DataPath>
 					<CheckBoxType>Auto</CheckBoxType>
-					<ContextMenu name="СписокАктивнаКонтекстноеМеню" id="50"/>
-					<ExtendedTooltip name="СписокАктивнаРасширеннаяПодсказка" id="51"/>
+					<ContextMenu name="СписокАктивнаКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="СписокАктивнаРасширеннаяПодсказка" id="43"/>
 				</CheckBoxField>
-				<CheckBoxField name="СписокПодтверждена" id="52">
+				<CheckBoxField name="СписокПодтверждена" id="44">
 					<DataPath>Список.Подтверждена</DataPath>
 					<ReadOnly>true</ReadOnly>
 					<CheckBoxType>Auto</CheckBoxType>
-					<ContextMenu name="СписокПодтвержденаКонтекстноеМеню" id="53"/>
-					<ExtendedTooltip name="СписокПодтвержденаРасширеннаяПодсказка" id="54"/>
+					<ContextMenu name="СписокПодтвержденаКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="СписокПодтвержденаРасширеннаяПодсказка" id="46"/>
 				</CheckBoxField>
-				<InputField name="СписокДатаПодтверждения" id="55">
+				<InputField name="СписокДатаПодтверждения" id="47">
 					<DataPath>Список.ДатаПодтверждения</DataPath>
 					<ReadOnly>true</ReadOnly>
 					<Wrap>false</Wrap>
-					<ContextMenu name="СписокДатаПодтвержденияКонтекстноеМеню" id="56"/>
-					<ExtendedTooltip name="СписокДатаПодтвержденияРасширеннаяПодсказка" id="57"/>
+					<ContextMenu name="СписокДатаПодтвержденияКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="СписокДатаПодтвержденияРасширеннаяПодсказка" id="49"/>
 				</InputField>
 			</ChildItems>
 		</Table>
 	</ChildItems>
 	<Attributes>
-		<Attribute name="Список" id="1">
+		<Attribute name="Список" id="50">
 			<Type>
 				<v8:Type>cfg:DynamicList</v8:Type>
 			</Type>
@@ -212,7 +213,7 @@
 				</ListSettings>
 			</Settings>
 		</Attribute>
-		<Attribute name="ОтборПользователь" id="2">
+		<Attribute name="ОтборПользователь" id="51">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -223,7 +224,7 @@
 				<v8:Type>cfg:DefinedType.ЕРП_ПолучательУведомлений</v8:Type>
 			</Type>
 		</Attribute>
-		<Attribute name="ОтборБот" id="3">
+		<Attribute name="ОтборБот" id="52">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -234,7 +235,7 @@
 				<v8:Type>cfg:DefinedType.ЕРП_БотTelegram</v8:Type>
 			</Type>
 		</Attribute>
-				<Attribute name="ОтборТолькоАктивные" id="4">
+				<Attribute name="ОтборТолькоАктивные" id="53">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -247,7 +248,7 @@
 		</Attribute>
 	</Attributes>
 	<Commands>
-		<Command name="ПроверитьСвязьTelegram" id="1">
+		<Command name="ПроверитьСвязьTelegram" id="54">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -267,7 +268,7 @@
 			<Action>ПроверитьСвязьTelegram</Action>
 			<Representation>TextPicture</Representation>
 		</Command>
-		<Command name="ОтправитьКодПодтверждения" id="2">
+		<Command name="ОтправитьКодПодтверждения" id="55">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -282,7 +283,7 @@
 			</ToolTip>
 			<Action>ОтправитьКодПодтверждения</Action>
 		</Command>
-		<Command name="ПодтвердитьПривязку" id="3">
+		<Command name="ПодтвердитьПривязку" id="56">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
