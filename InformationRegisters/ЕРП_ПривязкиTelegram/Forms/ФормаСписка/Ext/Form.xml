@@ -210,6 +210,12 @@
 					<dcsset:item>
 						<dcsset:field>ДатаПодтверждения</dcsset:field>
 					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>КодДействителенДо</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ПопыткиПодтверждения</dcsset:field>
+					</dcsset:item>
 				</ListSettings>
 			</Settings>
 		</Attribute>
