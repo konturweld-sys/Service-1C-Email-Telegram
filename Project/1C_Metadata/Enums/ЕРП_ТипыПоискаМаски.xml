@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://1c.ru" xmlns:v8="http://1c.ru" xmlns:xr="http://1c.ru" xmlns:xsi="http://w3.org" version="2.16">
+<Enum uuid="22222222-2222-4222-8222-222222222301"><InternalInfo>
+<xr:GeneratedType name="EnumRef.ЕРП_ТипыПоискаМаски" category="Ref"><xr:TypeId>22222222-2222-4222-8222-222222222302</xr:TypeId><xr:ValueId>22222222-2222-4222-8222-222222222303</xr:ValueId></xr:GeneratedType>
+<xr:GeneratedType name="EnumManager.ЕРП_ТипыПоискаМаски" category="Manager"><xr:TypeId>22222222-2222-4222-8222-222222222304</xr:TypeId><xr:ValueId>22222222-2222-4222-8222-222222222305</xr:ValueId></xr:GeneratedType>
+<xr:GeneratedType name="EnumList.ЕРП_ТипыПоискаМаски" category="List"><xr:TypeId>22222222-2222-4222-8222-222222222306</xr:TypeId><xr:ValueId>22222222-2222-4222-8222-222222222307</xr:ValueId></xr:GeneratedType>
+</InternalInfo><Properties><Name>ЕРП_ТипыПоискаМаски</Name><Synonym><v8:item><v8:lang>ru</v8:lang><v8:content>Типы поиска маски</v8:content></v8:item></Synonym><Comment/><UseStandardCommands>false</UseStandardCommands><QuickChoice>true</QuickChoice></Properties><ChildObjects>
+<EnumValue uuid="22222222-2222-4222-8222-222222222311"><Properties><Name>ПоследовательностьСлов</Name><Synonym><v8:item><v8:lang>ru</v8:lang><v8:content>Последовательность слов</v8:content></v8:item></Synonym><Comment/></Properties></EnumValue>
+<EnumValue uuid="22222222-2222-4222-8222-222222222312"><Properties><Name>ВсеСловаИ</Name><Synonym><v8:item><v8:lang>ru</v8:lang><v8:content>Все слова (И)</v8:content></v8:item></Synonym><Comment/></Properties></EnumValue>
+<EnumValue uuid="22222222-2222-4222-8222-222222222313"><Properties><Name>ЛюбоеСловоИЛИ</Name><Synonym><v8:item><v8:lang>ru</v8:lang><v8:content>Любое слово (ИЛИ)</v8:content></v8:item></Synonym><Comment/></Properties></EnumValue>
+<EnumValue uuid="22222222-2222-4222-8222-222222222314"><Properties><Name>РегулярноеВыражение</Name><Synonym><v8:item><v8:lang>ru</v8:lang><v8:content>Регулярное выражение</v8:content></v8:item></Synonym><Comment/></Properties></EnumValue>
+</ChildObjects></Enum></MetaDataObject>
