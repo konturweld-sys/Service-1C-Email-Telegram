@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://1c.ru" xmlns:v8="http://1c.ru" xmlns:xr="http://1c.ru" xmlns:xsi="http://w3.org" version="2.16">
+<Enum uuid="22222222-2222-4222-8222-222222222201"><InternalInfo>
+<xr:GeneratedType name="EnumRef.ЕРП_СтатусыОтправкиУведомлений" category="Ref"><xr:TypeId>22222222-2222-4222-8222-222222222202</xr:TypeId><xr:ValueId>22222222-2222-4222-8222-222222222203</xr:ValueId></xr:GeneratedType>
+<xr:GeneratedType name="EnumManager.ЕРП_СтатусыОтправкиУведомлений" category="Manager"><xr:TypeId>22222222-2222-4222-8222-222222222204</xr:TypeId><xr:ValueId>22222222-2222-4222-8222-222222222205</xr:ValueId></xr:GeneratedType>
+<xr:GeneratedType name="EnumList.ЕРП_СтатусыОтправкиУведомлений" category="List"><xr:TypeId>22222222-2222-4222-8222-222222222206</xr:TypeId><xr:ValueId>22222222-2222-4222-8222-222222222207</xr:ValueId></xr:GeneratedType>
+</InternalInfo><Properties><Name>ЕРП_СтатусыОтправкиУведомлений</Name><Synonym><v8:item><v8:lang>ru</v8:lang><v8:content>Статусы отправки уведомлений</v8:content></v8:item></Synonym><Comment/><UseStandardCommands>false</UseStandardCommands><QuickChoice>true</QuickChoice></Properties><ChildObjects>
+<EnumValue uuid="22222222-2222-4222-8222-222222222211"><Properties><Name>КОтправке</Name><Synonym><v8:item><v8:lang>ru</v8:lang><v8:content>К отправке</v8:content></v8:item></Synonym><Comment/></Properties></EnumValue>
+<EnumValue uuid="22222222-2222-4222-8222-222222222212"><Properties><Name>Обрабатывается</Name><Synonym><v8:item><v8:lang>ru</v8:lang><v8:content>Обрабатывается</v8:content></v8:item></Synonym><Comment/></Properties></EnumValue>
+<EnumValue uuid="22222222-2222-4222-8222-222222222213"><Properties><Name>Отправлено</Name><Synonym><v8:item><v8:lang>ru</v8:lang><v8:content>Отправлено</v8:content></v8:item></Synonym><Comment/></Properties></EnumValue>
+<EnumValue uuid="22222222-2222-4222-8222-222222222214"><Properties><Name>Ошибка</Name><Synonym><v8:item><v8:lang>ru</v8:lang><v8:content>Ошибка</v8:content></v8:item></Synonym><Comment/></Properties></EnumValue>
+</ChildObjects></Enum></MetaDataObject>
