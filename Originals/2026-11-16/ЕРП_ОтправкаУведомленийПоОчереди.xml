@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://1c.ru" xmlns:v8="http://1c.ru" xmlns:xr="http://1c.ru" xmlns:xsi="http://w3.org" version="2.16">
+	<ScheduledJob uuid="77777777-7777-4777-8777-777777777101">
+		<Properties>
+			<Name>ЕРП_ОтправкаУведомленийПоОчереди</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправка уведомлений по очереди (мониторинг логов)</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>Периодичность в ИБ: каждые 10 секунд</Comment>
+			<MethodName>CommonModule.ЕРП_ОбработкаОчередиУведомлений.ВыполнитьОтправкуОчереди</MethodName>
+			<Description>Фоновая отправка уведомлений из регистра ЕРП_ОчередьУведомлений (каждые 10 секунд)</Description>
+			<Key>ЕРП_ОтправкаУведомленийПоОчереди</Key>
+			<Use>true</Use>
+			<Predefined>true</Predefined>
+			<RestartCountOnFailure>3</RestartCountOnFailure>
+			<RestartIntervalOnFailure>30</RestartIntervalOnFailure>
+		</Properties>
+	</ScheduledJob>
+</MetaDataObject>
