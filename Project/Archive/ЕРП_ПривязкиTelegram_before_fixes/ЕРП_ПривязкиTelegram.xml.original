@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://1c.ru" xmlns:v8="http://1c.ru" xmlns:xr="http://1c.ru" xmlns:xsi="http://w3.org" version="2.16">
+	<InformationRegister uuid="44444444-4444-4444-8444-444444444201">
+		<InternalInfo>
+			<xr:GeneratedType name="InformationRegisterRecord.ЕРП_ПривязкиTelegram" category="Record">
+				<xr:TypeId>44444444-4444-4444-8444-444444444202</xr:TypeId>
+				<xr:ValueId>44444444-4444-4444-8444-444444444203</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterManager.ЕРП_ПривязкиTelegram" category="Manager">
+				<xr:TypeId>44444444-4444-4444-8444-444444444204</xr:TypeId>
+				<xr:ValueId>44444444-4444-4444-8444-444444444205</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterSelection.ЕРП_ПривязкиTelegram" category="Selection">
+				<xr:TypeId>44444444-4444-4444-8444-444444444206</xr:TypeId>
+				<xr:ValueId>44444444-4444-4444-8444-444444444207</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterList.ЕРП_ПривязкиTelegram" category="List">
+				<xr:TypeId>44444444-4444-4444-8444-444444444208</xr:TypeId>
+				<xr:ValueId>44444444-4444-4444-8444-444444444209</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordSet.ЕРП_ПривязкиTelegram" category="RecordSet">
+				<xr:TypeId>44444444-4444-4444-8444-444444444210</xr:TypeId>
+				<xr:ValueId>44444444-4444-4444-8444-444444444211</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordKey.ЕРП_ПривязкиTelegram" category="RecordKey">
+				<xr:TypeId>44444444-4444-4444-8444-444444444212</xr:TypeId>
+				<xr:ValueId>44444444-4444-4444-8444-444444444213</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordManager.ЕРП_ПривязкиTelegram" category="RecordManager">
+				<xr:TypeId>44444444-4444-4444-8444-444444444214</xr:TypeId>
+				<xr:ValueId>44444444-4444-4444-8444-444444444215</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ЕРП_ПривязкиTelegram</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Привязки Telegram</v8:content>
+				</v8:item>
+			</Synonym>
+			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
+			<WriteMode>Independent</WriteMode>
+			<UseStandardCommands>true</UseStandardCommands>
+			<DefaultListForm>InformationRegister.ЕРП_ПривязкиTelegram.Form.ФормаСписка</DefaultListForm>
+		</Properties>
+		<ChildObjects>
+			<Form>ФормаСписка</Form>
+			<Resource uuid="44444444-4444-4444-8444-444444444221">
+				<Properties>
+					<Name>ChatID</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Chat ID</v8:content>
+						</v8:item>
+					</Synonym>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>50</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Resource>
+			<Resource uuid="44444444-4444-4444-8444-444444444222">
+				<Properties>
+					<Name>Активна</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Активна</v8:content>
+						</v8:item>
+					</Synonym>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Properties>
+			</Resource>
+			<Resource uuid="44444444-4444-4444-8444-444444444223">
+				<Properties>
+					<Name>Подтверждена</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подтверждена</v8:content>
+						</v8:item>
+					</Synonym>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Properties>
+			</Resource>
+			<Resource uuid="44444444-4444-4444-8444-444444444224">
+				<Properties>
+					<Name>КодПодтверждения</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Код подтверждения</v8:content>
+						</v8:item>
+					</Synonym>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>20</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Resource>
+			<Resource uuid="44444444-4444-4444-8444-444444444225">
+				<Properties>
+					<Name>ДатаПодтверждения</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата подтверждения</v8:content>
+						</v8:item>
+					</Synonym>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Properties>
+			</Resource>
+			<Dimension uuid="44444444-4444-4444-8444-444444444231">
+				<Properties>
+					<Name>Пользователь</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пользователь</v8:content>
+						</v8:item>
+					</Synonym>
+					<Type>
+						<v8:Type>cfg:DefinedType.ЕРП_ПолучательУведомлений</v8:Type>
+					</Type>
+					<Indexing>Index</Indexing>
+					<MainFilter>true</MainFilter>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="44444444-4444-4444-8444-444444444232">
+				<Properties>
+					<Name>Бот</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Бот</v8:content>
+						</v8:item>
+					</Synonym>
+					<Type>
+						<v8:Type>cfg:DefinedType.ЕРП_БотTelegram</v8:Type>
+					</Type>
+					<Indexing>Index</Indexing>
+					<MainFilter>true</MainFilter>
+				</Properties>
+			</Dimension>
+		</ChildObjects>
+	</InformationRegister>
+</MetaDataObject>
