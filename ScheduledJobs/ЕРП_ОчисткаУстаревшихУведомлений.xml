@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://1c.ru" xmlns:v8="http://1c.ru" xmlns:xr="http://1c.ru" xmlns:xsi="http://w3.org" version="2.16">
+	<ScheduledJob uuid="77777777-7777-4777-8777-777777777201">
+		<Properties>
+			<Name>ЕРП_ОчисткаУстаревшихУведомлений</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистка устаревших уведомлений очереди</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>Периодичность в ИБ: ежедневно в 03:00</Comment>
+			<MethodName>CommonModule.ЕРП_ОбработкаОчередиУведомлений.ОчиститьУстаревшиеЗаписиОчереди</MethodName>
+			<Description>Ежедневное удаление отправленных и ошибочных записей очереди старше срока хранения (ежедневно в 03:00)</Description>
+			<Key>ЕРП_ОчисткаУстаревшихУведомлений</Key>
+			<Use>true</Use>
+			<Predefined>true</Predefined>
+			<RestartCountOnFailure>2</RestartCountOnFailure>
+			<RestartIntervalOnFailure>60</RestartIntervalOnFailure>
+		</Properties>
+	</ScheduledJob>
+</MetaDataObject>
